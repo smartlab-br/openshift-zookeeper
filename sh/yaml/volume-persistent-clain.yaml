@@ -1,0 +1,100 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zk-1
+  labels:
+    type: local
+    pattern: zk-mpt
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /var/exports/zookeeper/1
+    server: 10.18.20.14 
+  persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zk-2
+  labels:
+    type: local
+    pattern: zk-mpt
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /var/exports/zookeeper/2
+    server: 10.18.20.14 
+  persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zk-3
+  labels:
+    type: local
+    pattern: zk-mpt
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /var/exports/zookeeper/3
+    server: 10.18.20.14 
+  persistentVolumeReclaimPolicy: Recycle
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zk-4
+  labels:
+    type: local
+    pattern: zk-mpt
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /var/exports/zookeeper/4
+    server: 10.18.20.14 
+  persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zk-5
+  labels:
+    type: local
+    pattern: zk-mpt
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /var/exports/zookeeper/5
+    server: 10.18.20.14 
+  persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zk-6
+  labels:
+    type: local
+    pattern: zk-mpt
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /var/exports/zookeeper/6
+    server: 10.18.20.14 
+  persistentVolumeReclaimPolicy: Recycle
