@@ -59,4 +59,6 @@ RUN set -x pipefail \
 WORKDIR $ZK_HOME
 USER $ZK_USER
 
+EXPOSE 2181 2888 3888
+
 CMD ["sh", "bin/zkGenConfig.sh"]
