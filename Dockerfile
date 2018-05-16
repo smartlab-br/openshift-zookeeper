@@ -1,13 +1,13 @@
 FROM centos:7
 
-ARG ZK_DIST=zookeeper-3.4.11
+ARG ZK_DIST=zookeeper-3.4.12
 
 LABEL version=$ZK_DIST \
     os="alpine" \
     os.version="3.7" \
     name="Zookeeper for OpenShift 3.3+" \
     description="Zookeeper image to use in SmartLab Open Data Project" \
-    maintainer="smartlab@mpt.mp.br"
+    maintainer="smartlab-dev@mpt.mp.br"
 
 ENV ZK_USER=zk \
   ZK_HOME=/zk \
