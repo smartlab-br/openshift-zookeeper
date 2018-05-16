@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: zookeeper
   labels:
-    app: zookeepe
+    app: zookeeper
 spec:
   ports:
+  - port: 2181
+    name: client
   - port: 2888
     name: server
   - port: 3888
@@ -31,7 +33,7 @@ spec:
         fsGroup: 1000
       containers:
       - name: zookeeper
-        image: "smartlab/zookeeper:3.4.11"
+        image: "smartlab/zookeeper:3.4.12"
         imagePullPolicy: Always
         ports: 
         - containerPort: 2181

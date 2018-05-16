@@ -89,6 +89,7 @@ function create_config() {
     echo "maxSessionTimeout=$ZK_MAX_SESSION_TIMEOUT" >> $ZK_STATIC_CONFIG
     echo "autopurge.snapRetainCount=$ZK_SNAP_RETAIN_COUNT" >> $ZK_STATIC_CONFIG
     echo "autopurge.purgeInteval=$ZK_PURGE_INTERVAL" >> $ZK_STATIC_CONFIG
+    print_servers >> $ZK_STATIC_CONFIG
     echo "dynamicConfigFile=$ZK_DYNAMIC_CONFIG" >> $ZK_STATIC_CONFIG
     
     echo "Wrote ZooKeeper static configuration file to $ZK_STATIC_CONFIG"
