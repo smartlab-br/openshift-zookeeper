@@ -7,8 +7,13 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 2181
-      nodePort: 32181
-      name: http
+  - port: 2888
+    name: server
+  - port: 3888
+    name: leader-election
+  - port: 2181
+    nodePort: 32181
+    name: client
+  ClusterIP: none
   selector:
     app: zookeeper

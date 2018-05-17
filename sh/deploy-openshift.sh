@@ -12,5 +12,5 @@ echo 'persitent volumes claining...'
 echo 'deploying zookeeper...'
 oc create -f yaml/deploy-zookeeper.yaml
 
-echo 'creating routes...'
-oc create -f yaml/route.yaml
+echo 'creating services...'
+oc create -f yaml/service.yaml
