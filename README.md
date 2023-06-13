@@ -6,3 +6,6 @@ Zookeeper for SmartLab developers
 
      > Example
         docker run -p 2181:2181 -d -h zookeeper-01 smartlab/zookeeper
+
+# Note
+This repository was archived.
